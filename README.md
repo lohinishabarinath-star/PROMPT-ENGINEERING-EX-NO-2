@@ -114,6 +114,7 @@ GIVEN PROMPT AND OUTPUT TAKEN (Chat GPT):
 Prompt used: “Summarize the article on blockchain technology.”
 
 Summary:
+
 Blockchain is a digital technology that records data in a secure and decentralized way. It stores information in blocks that are linked together to form a chain. Each block contains transaction data and a unique code called a hash. Because the data is distributed across many computers, it is difficult to change or hack. Blockchain is widely used in cryptocurrencies like Bitcoin and is also applied in areas such as supply chain management, healthcare, and finance.
 
 2. Role-Based Prompting – Summary
@@ -121,6 +122,7 @@ Blockchain is a digital technology that records data in a secure and decentraliz
 Prompt used: “Act as a teacher and explain blockchain technology to undergraduate students.”
 
 Summary:
+
 Blockchain is a system used to store digital records safely without depending on a central authority. Information is grouped into blocks, and each block is connected to the previous one, forming a chain. Once data is added, it cannot be easily altered, which makes blockchain secure and trustworthy. This technology is best known for powering cryptocurrencies, but it is also useful in banking, voting systems, and tracking goods.
 
 3. Structured Prompting – Summary
@@ -146,6 +148,7 @@ Cryptocurrency, supply chain tracking, healthcare records, and finance.
 Prompt used: “Summarize the article in 100 words using simple language.”
 
 Summary:
+
 Blockchain is a technology used to store information securely. It keeps data in blocks that are connected in a chain. Each block contains transaction details and cannot be easily changed. Blockchain does not rely on a single authority, making it more transparent and safe. It is mainly used in cryptocurrencies like Bitcoin but is also helpful in banking, healthcare, and supply chain management. This technology increases trust and reduces the risk of fraud.
 
 5. Audience-Focused Prompting – Summary
@@ -209,9 +212,11 @@ GIVEN PROMPT AND OUTPUT TAKEN:(Claud)
 
 Zero-Shot Prompting
 Prompt:
+
 Summarize this article about blockchain technology for undergraduate students in 3-4 sentences.
 
 Output:
+
 Blockchain is a distributed digital ledger that records transactions across multiple computers instead of a single server. Each transaction is grouped into blocks that are cryptographically linked together, creating an immutable chain that cannot be altered without network consensus. This decentralized approach makes blockchain more secure and transparent than traditional databases. While originally developed for cryptocurrencies like Bitcoin, blockchain now has applications in finance, supply chains, healthcare, and digital identity systems.
 
 When to use: Simple, straightforward tasks where the desired output is clear.
@@ -221,6 +226,7 @@ Prompt:
 Here are examples of good article summaries for undergraduate students
 
 Output:
+
 Blockchain is a distributed ledger system where transactions are recorded across multiple computers rather than a single server. Each transaction is grouped into cryptographically-linked blocks forming an immutable chain that prevents tampering. Originally created for Bitcoin, blockchain now supports applications in banking, supply chain tracking, and secure data management. The technology's decentralized nature eliminates the need for central authorities while maintaining transparency and security.
 
 When to use: When you want a specific format, tone, or style that's best shown through examples.
@@ -249,6 +255,7 @@ Assigning the AI a specific role or persona with domain expertise.
 You are a computer science professor teaching Introduction to Emerging Technologies. Summarize this blockchain article for your undergraduate students who have basic programming knowledge but no prior blockchain experience. Make it educational and engaging.
 
 Output:
+
 Think of blockchain as a shared spreadsheet that no single person controls. In traditional systems, banks or companies manage databases on their servers—they're the single source of truth. Blockchain flips this: instead of one central database, identical copies exist on thousands of computers worldwide (called nodes). 
 
 When you make a transaction, it's grouped with others into a "block." Each block gets a unique cryptographic fingerprint (hash) that depends on all the data inside it AND the previous block's fingerprint. This creates a chain where changing any historical data would break all the subsequent links—like trying to edit one page in a book without changing all the page numbers that follow. The network would immediately detect the mismatch.
@@ -262,6 +269,7 @@ Prompt:
 Summarize this blockchain article in the following structure
 
 Output:
+
 What it is: Blockchain is a distributed digital ledger that records transactions across multiple computers without a central authority.
 
 How it works: Data is grouped into cryptographically-linked blocks that form a chronological chain. Each block contains a unique hash connecting it to the previous block, making historical records immutable. Changes require consensus from the network, preventing unauthorized tampering.
@@ -290,6 +298,7 @@ Summarize this blockchain article for undergraduates with these constraints:
 - 8th-grade reading level
 
 Output:
+
 Blockchain is like a shared notebook that many people have copies of instead of one person controlling it. When someone makes a transaction, it gets written into a new page (called a block) that links to the previous page. Because everyone has a copy, no one can secretly change old entries—others would notice the mismatch. This makes blockchain very secure without needing banks or companies to verify everything. While Bitcoin made it famous, today it's used to track products, share medical records safely, and handle payments across countries.
 
 When to use:When writing for specific audiences or meeting strict requirements (word count, reading level, compliance).
@@ -302,14 +311,17 @@ Simple instruction: "Summarize the basics of blockchain technology.
 "Blockchain is a distributed ledger technology (DLT) that records transactions in blocks linked chronologically via cryptography. It operates without a central authority, using consensus mechanisms like proof-of-work to validate and add data immutably across a peer-to-peer network.Key elements include blocks (data + hash), chains (linked blocks), and nodes (computers maintaining copies). Applications span cryptocurrencies, supply chain tracking, and secure voting.
 
 Structured Prompting
+
 Uses headings and sections for organization.DefinitionBlockchain: Decentralized, immutable digital ledger for transaction records.
 Core ComponentsBlocks: Contain transactions, timestamp, previous hash.Chain: Sequential links via hashes.Consensus: Network agreement (e.g., proof-of-work/stake).
 BenefitsTransparency, security, no intermediaries; used in finance and logistics.
 
 Constraint-Based Prompting
+
 Limits to 150 words, 5 bullets, undergrad level, no jargon without definition.Blockchain = shared digital notebook for transactions, spread across computers (nodes), no boss in charge.Each page (block) lists deals + unique code (hash) matching last page.New pages added only if most computers agree (consensus, like voting).Can't fake changes: alters code, breaks chain, everyone notices.Why cool? Safe money (Bitcoin), track shipments honestly (under 150 words total).
 
 Chain-of-Thought Prompting
+
 Step-by-step reasoning before summary.First, identify core concept: blockchain as distributed ledger. Key traits? Decentralized (no central server), immutable (cryptographic chaining), transparent (public view). 
 Next, explain mechanics: transactions → validation → block creation with hash → append to chain via consensus. 
 Avoid errors: not just crypto, but any secure records. Simplify for undergrads: compare to tamper-proof receipt chain.
@@ -319,22 +331,28 @@ Now synthesize: Start with what/why, then how, end with uses.
 Final Summary: Blockchain enables secure, shared record-keeping without middlemen by linking transaction "blocks" with unbreakable hash codes across a network. Nodes validate additions collectively, preventing fraud—perfect for digital currencies or supply tracking.
 
 Zero-Shot Prompt
+
 SummaryThis basic technique uses a simple instruction without examples.Blockchain is an advanced database that stores data in linked "blocks," forming a tamper-proof chain for tracking transactions like payments or orders. Unlike traditional databases controlled by one entity, it spreads data across a network of computers (nodes), requiring most nodes to agree (consensus) before adding a block—often via methods like proof-of-work where computers solve puzzles. Each block includes transaction details, a timestamp, and a unique hash linking it to the previous one; altering any data changes the hash, breaking the chain and alerting the network. This makes it immutable and ideal for uses like finance (secure payments), supply chains (tracking goods), and cryptocurrencies (Bitcoin). Key benefits include decentralization (no single failure point), transparency, and efficiency in audits.
 
 Rubric-Driven Prompt
+
 Summary This structures output around predefined criteria for clarity.1. What is Blockchain?A shared, append-only ledger distributed across nodes, storing transactions in chronological blocks linked by cryptographic hashes.
 2. How Blocks Are AddedTransactions are recorded, validated by network consensus (e.g., majority approval), bundled into a block with a hash of the prior block, then shared across all nodes.
 3. Why Tamper-Resistant?Hashes create an unbreakable chain; changing one block alters its hash and all following ones, requiring impossible network-wide consensus to approve.This ensures immutability, security via public-private keys, and trust without central authorities.
 
 Role-Prompted 
+
 Summary Imagine explaining to undergrads new to tech: as a friendly prof simplifying for a lecture.Hey students—blockchain is like a giant shared Google Doc that no one person controls, where every edit (transaction) gets stamped with a unique code (hash) and locked into a chain of pages (blocks). Picture buying coffee: your payment gets broadcast to café computers worldwide; they check it's legit via puzzles or votes, add it to the newest page, and everyone updates their copy instantly—no bank needed! It's super secure because messing with one page breaks the chain's codes, and transparent since all see the history. Real-world? Bitcoin for digital cash, or Walmart tracking food from farm to store to avoid outbreaks.
 
 PROMPT GIVEN AND OUTPUT TAKEN:(Gemini ):
+
 ​1. Zero-Shot Prompt
+
 ​Purpose: Generating a broad, unbiased overview without providing examples.
 ​Summary: Blockchain is a decentralized, distributed ledger technology that records transactions across many computers so that the record cannot be altered retroactively. It relies on three pillars: decentralization, transparency, and immutability. By using cryptographic hashing to link "blocks" of data, it creates a secure chain that removes the need for third-party intermediaries like banks or government clearinghouses.
 
 ​2. Chain-of-Thought (CoT) Prompt
+
 ​Purpose: Breaking down the "why" and "how" for students who need to understand the logic.
 ​Step-by-Step Logic:
 ​The Problem: Traditional digital records are easy to copy or fake (the "double-spend" problem).
@@ -344,6 +362,7 @@ PROMPT GIVEN AND OUTPUT TAKEN:(Gemini ):
 ​The Result: Therefore, if you try to change Block A, Block B’s link breaks, alerting the entire network to the fraud.
 
 ​3. Structured Prompt
+
 ​Purpose: High scannability for students cramming or reviewing notes.
 ​## Blockchain 101
 ​Definition: A peer-to-peer shared database.
@@ -355,6 +374,7 @@ PROMPT GIVEN AND OUTPUT TAKEN:(Gemini ):
 ​Reduces transaction costs by removing middlemen.
 
 ​4. Constraint-Based Prompt
+
 ​Purpose: Strict adherence to specific formats (e.g., word counts or reading levels).
 ​The "3-3-3" Summary:
 ​3 Keywords: Decentralized, Immutable, Cryptographic.
@@ -362,6 +382,7 @@ PROMPT GIVEN AND OUTPUT TAKEN:(Gemini ):
 ​3 Syllables or Less (Core Concept): "Trust the code."
 
 ​5. Direct Prompt
+
 ​Purpose: Getting straight to the point with zero fluff.
 ​Definition: Blockchain is a secure, decentralized record of transactions.
 Function: It groups data into blocks, hashes them, and chains them together.
