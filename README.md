@@ -388,6 +388,9 @@ PROMPT GIVEN AND OUTPUT TAKEN:(Gemini ):
 Function: It groups data into blocks, hashes them, and chains them together.
 Impact: It enables trustless peer-to-peer exchanges of value or information.
 
+<img width="988" height="523" alt="image" src="https://github.com/user-attachments/assets/b56418f2-ccf9-4505-a90b-46fc7e13e72e" />
+
+
 
 ## RESULT
 The prompting techniques from various AI tools such as Chat gpt, Perplexity ,claud, Gemini and Copilot are analysed and verified.
